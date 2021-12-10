@@ -60,7 +60,8 @@ jobs:
     - shell: bash
       run: |
         echo argument count is ${{ steps.report-count.outputs.arg-count }}  
-
+        exit 1
+        
   create-issue-on-failure:
 
     runs-on: ubuntu-latest 
